@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<style>
+    body{
+        align-items:center ;
+        justify-content: center;
+    }
+    td,th{
+        border: 2px solid black;
+        font-size: 20px;
+        padding: 5px 10px;
+    
+    }
+    table{
+        display: flex;
+        padding-top: 100px;
+        justify-content: space-around;
+    }
+    #mathTable{
+        text-align: center;
+    }
+    header{
+        text-align: center;
+text-decoration:;
+    }
+</style>
+<body>
+    <header>
+        <h1>Math Table</h1>
+    </header>
+    <table id="mathTable">
+        <tr>
+            <td>2</td>
+            <td>x</td>
+            <td>1</td>
+            <td>=</td>
+            <td>2</td>
+        </tr>
+    </table>
+
+    <script>
+        let tr = " "
+        console.log("LOOP START")
+        for( let i=1; i<= 10; i++){
+            tr += `<tr><td>12</td><td>x</td><td>${i}</td><td>=</td><td>${12 * i}</td></tr>`
+        }
+        document.getElementById("mathTable").innerHTML = tr
+        console.log("LOOP END", tr)
+    </script>
+</body>
+</html>
